@@ -86,8 +86,8 @@ Silbern glänzende, pupillenlose Augen durchdringen deinen Geist, deinen Verstan
 Hast du in diesem Kapitel den 1. SCHICKSALSPUNKT gefunden? Wenn nicht, kannst du es erneut versuchen und tiefgehender die Geheimnisse der Ahnen erforschen bei deiner Flucht ...
 '''
 
+
+
 #Pfadreihenfolge: 1, 72, 76, 56, 92, 35, 40, 71, 90, 65, 11, 60, 16, 69, 68, 33, 13, 38, 100
 erster_prototyp_pfad = [abs1, abs72, abs76, abs55, abs92, abs35, abs40, abs71, abs90, abs65, abs11, abs60, abs16, abs89, abs58, abs33, abs13, abs38, abs100]
 
-
-hauptpfad = [abs1, abs72, abs76, abs55, abs92, abs35, abs40, abs71, abs90, abs65, abs11, abs60, abs16, abs33, abs13, abs38]
