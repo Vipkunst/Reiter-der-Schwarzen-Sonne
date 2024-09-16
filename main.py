@@ -1,6 +1,6 @@
 import sektionen
 
-sek_read = 0
+sek_read = 1
 total_sections = len(sektionen.hauptpfad)
 
 for sek in sektionen.hauptpfad:
