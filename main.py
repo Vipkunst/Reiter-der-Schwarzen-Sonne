@@ -15,7 +15,7 @@ def clear_console():
 def iterate_all_sections():
     sek_read = 1
     total_sections = len(sektionen.erster_prototyp_pfad)
-    for sek in sektionen.hauptpfad:
+    for sek in sektionen.erster_prototyp_pfad:
         clear_console()
         progress = sek_read / total_sections * 100
         print(f"Progress: {progress:.2f}%")
