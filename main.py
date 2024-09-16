@@ -16,4 +16,3 @@ for sek in sektionen.hauptpfad:
     print(sek)
     sek_read += 1
     input()
-    print("hallo")
