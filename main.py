@@ -1,9 +1,6 @@
 import sektionen
 import os
 
-storyArray = [1, 72, 76, 55, 92, 35, 40, 71, 90, 65, 11, 60, 16, 89, 58, 33, 13, 38, 100]
-
-
 # Print all sections
 def clear_console():
     if os.name == 'nt':
