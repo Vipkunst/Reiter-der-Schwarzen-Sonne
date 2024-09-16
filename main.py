@@ -1,5 +1,6 @@
 import sektionen
 
+# Print all sections
 sek_read = 1
 total_sections = len(sektionen.hauptpfad)
 
@@ -9,3 +10,4 @@ for sek in sektionen.hauptpfad:
     print(sek)
     sek_read += 1
     input()
+
