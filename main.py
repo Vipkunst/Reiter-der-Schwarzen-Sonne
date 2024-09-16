@@ -18,7 +18,6 @@ def iterate_all_sections():
         progress = sek_read / total_sections * 100
         print(sek)
         print(f"Progress: {progress:.2f}%")
-        sek_read += 1
         input("Enter to continue")
 
 
