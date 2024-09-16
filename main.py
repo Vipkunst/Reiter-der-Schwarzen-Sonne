@@ -1,7 +1,16 @@
 import sektionen
+import os
+import platform
 
 sek_read = 1
 total_sections = len(sektionen.hauptpfad)
+
+system = platform.platform()
+
+if "Windows" in system:
+    os.system('cls')
+else:
+    os.system('clear')
 
 for sek in sektionen.hauptpfad:
     progress = sek_read / total_sections * 100
@@ -9,3 +18,8 @@ for sek in sektionen.hauptpfad:
     print(sek)
     sek_read += 1
     input()
+
+    if "Windows" in system:
+        os.system('cls')
+    else:
+        os.system('clear')

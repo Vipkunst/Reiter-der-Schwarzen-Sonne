@@ -83,4 +83,4 @@ abs92 = '''Orientierungslos rennst du durch den Rundgang um den Hof des Palasts.
 
 #Pfadreihenfolge: 1, 72, 76, 56, 92, 35, 40, 71, 90, 65, 11, 60, 16, 69, 68, 33, 13, 38, 100
 
-hauptpfad = [abs1, abs72, abs76, abs55, abs92, abs35, abs40, abs71, abs90, abs65, abs11, abs60, abs16, abs33, abs13, abs38]
+hauptpfad = [abs1, abs72, abs76, abs55, abs92, abs35, abs40, abs71, abs90, abs65, abs11, abs60, abs16, abs33, abs13, abs38] 
