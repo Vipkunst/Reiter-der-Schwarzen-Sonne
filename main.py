@@ -1,6 +1,4 @@
 import sektionen
-import os
-import time
 
 sek_read = 0
 total_sections = len(sektionen.hauptpfad)
