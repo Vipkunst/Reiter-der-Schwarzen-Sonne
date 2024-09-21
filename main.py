@@ -8,7 +8,7 @@ def clear_console():
     else:
         os.system('clear')
 
-
+# Iterate over all sections
 def iterate_all_sections():
     sek_read = 0
     total_sections = len(sektionen.erster_prototyp_pfad)
