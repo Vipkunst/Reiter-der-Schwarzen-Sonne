@@ -33,6 +33,10 @@ def show_section(section_key):
     return section['options']
 
 
+def get_user_input():
+    return input("Wähle deine nächsten Schritte: ")
+
+
 def init_game():
     current_section = 'abs1'
     while True:
@@ -56,10 +60,10 @@ def choose_paths():
         print("Invalid input. Please enter a valid input.")
         choose_paths()
 
+
 def main():
     print("\n")
     choose_paths()
-
 
 
 if __name__ == "__main__":
