@@ -9,6 +9,7 @@ def clear_console():
     else:
         os.system('clear')
 
+
 # Iterate over all sections
 def show_default_section():
     section_read = 0
