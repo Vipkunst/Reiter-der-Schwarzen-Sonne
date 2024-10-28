@@ -2,6 +2,8 @@ import individual
 import content
 import textwrap
 import os
+
+
 # Print all sections
 def clear_console():
     if os.name == 'nt':
@@ -9,15 +11,18 @@ def clear_console():
     else:
         os.system('clear')
 
+
 def show_default_section():
     section_read = 0
     total_sections = len(content.zweiter_prototyp_pfad)
-    
+
     currentSek = "abs1"
     path = content.zweiter_prototyp_pfad
 
-    while(currentSek != "end"):
+    while (currentSek != "end"):
+        print(f"\n\nProgress: {section_read / total_sections * 100:.2f}%")
         show_section(path, currentSek)
+        section_read += 1
 
         section = path[currentSek]
 
@@ -29,12 +34,11 @@ def show_default_section():
                 print(f"{key}: {value}")
 
             user_input = get_user_input()
-            
+
             currentSek = section["options"][user_input]
             input("Press Enter to continue...")
         else:
             currentSek = section['options']['1']
-        
 
     '''
     for contents in content.erster_prototyp_pfad:
@@ -46,11 +50,13 @@ def show_default_section():
         input("Press Enter to continue...")
     '''
 
+
 def show_section(path, section_key):
     section = path[section_key]
     wrapped_section = textwrap.fill(section['content'], width=100)
     print(f"\n{wrapped_section}")
     return
+
 
 def get_user_input():
     return input("Wähle deine nächsten Schritte: ")
@@ -67,6 +73,7 @@ def init_game():
         else:
             print("Invalid section number. Please enter a valid section number.")
 
+
 def choose_paths():
     user_choice_path = input("Wähle deinen Pfad: \n1.Individueller Pfad\n2.Standard Pfad\nAuswahl: ")
     if user_choice_path == "1":
@@ -77,10 +84,11 @@ def choose_paths():
         print("Invalid input. Please enter a valid input.")
         choose_paths()
 
+
 def main():
     print("\n")
     choose_paths()
 
 
 if __name__ == "__main__":
-   main()
+    main()
