@@ -10,6 +10,7 @@ def clear_console():
         os.system('clear')
 
 
+
 def show_default_section():
     section_read = 0
     total_sections = len(content.erster_prototyp_pfad)
