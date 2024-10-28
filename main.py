@@ -2,15 +2,14 @@ import individual
 import content
 import textwrap
 import os
-# Print all sections
+
 def clear_console():
     if os.name == 'nt':
         os.system('cls')
-    else:
+    elif os.name == 'posix':
         os.system('clear')
 
 
-# Iterate over all sections
 def show_default_section():
     section_read = 0
     total_sections = len(content.erster_prototyp_pfad)
@@ -27,7 +26,6 @@ def show_section(section_key):
     section = individual.chapter[section_key]
     wrapped_section = textwrap.fill(section['content'], width=100)
     print(wrapped_section)
-
     for key, value in section['text_options'].items():
         print(f"{key}: {value}")
     return section['options']
@@ -47,7 +45,6 @@ def init_game():
             current_section = options[user_input]
         else:
             print("Invalid section number. Please enter a valid section number.")
-
 
 
 def choose_paths():

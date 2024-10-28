@@ -82,6 +82,7 @@ Dir wird wieder bewusst, in welcher Lage du dich befindest.'''
 
 abs92 = '''Orientierungslos rennst du durch den Rundgang um den Hof des Palasts. Deine Hoffnung schwindet, jemals aus diesem gigantischen Gebäude zu entfliehen, doch etwas tief in deinem Inneren treibt dich an.'''
 
+abs97 = '''Vor dir steht ein Hüne von einem Kerl. Über seiner schweren Rüstung glänzt der Goldene Greif, das Wappentier Rhenus. Der gestandene Soldat schaut dich trotz etwas verschlafener Augen finster an. In der Rechten hält er ein Schwert, in der Linken Öllaterne und Schwertscheide samt Gürtel. Er konnte seine komplette Ausrüstung wohl nicht mehr rechtzeitig anlegen. Laterne und Scheide legt er langsam - ohne dich aus den Augen zu lassen - neben sich auf den Boden.'''
 abs100 = '''Ehe du reagieren kannst, ist der Schatten auf dich zugehuscht und packt deine Kehle mit steinhartem Griff. Unbarmherzig zieht er dich heran.
 Silbern glänzende, pupillenlose Augen durchdringen deinen Geist, deinen Verstand. Du spürst, wie todbringende Kälte in dich strömt. Dein Blut gefriert. Hilflos erstarrst du. Das Letzte, was du wahrnimmst, ist das siegessichere Grinsen auf den versteinerten Gesichtszügen dieses nachtschwarzen Überwesens.
 Hast du in diesem Kapitel den 1. SCHICKSALSPUNKT gefunden? Wenn nicht, kannst du es erneut versuchen und tiefgehender die Geheimnisse der Ahnen erforschen bei deiner Flucht ...
