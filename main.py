@@ -2,7 +2,10 @@ import individual
 import content
 import textwrap
 import os
-# Print all sections
+import random
+import Classes.Player as Player
+import Classes.Gegner as Gegner
+
 def clear_console():
     if os.name == 'nt':
         os.system('cls')
@@ -11,7 +14,7 @@ def clear_console():
 
 def show_default_section():
 
-
+    player = Player.Player()
     
     currentSek = "abs1"
     path = content.zweiter_prototyp_pfad
@@ -29,11 +32,26 @@ def show_default_section():
                 print(f"{key}: {value}")
 
             user_input = get_user_input()
+
+            if (user_input == "würfeln"):
+                gegner = Gegner("GARTAK, GEFÄNGNISWÄRTER", 2, 11, 10)
+                kampf(player, gegner)
             
             currentSek = section["options"][user_input]
             input("Press Enter to continue...")
         else:
             currentSek = section['options']['1']
+
+
+def kampf(player, gegner):
+
+
+def wuerfeln (min, max):
+    return random.randint(min, max)
+
+def show_stats(player):
+    print(f"HP: {player.HP}" + "\n"
+          +f"")
 
 def show_section(path, section_key):
     section = path[section_key]

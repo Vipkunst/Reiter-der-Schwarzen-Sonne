@@ -1,5 +1,5 @@
-import Kleidung
-import Waffe
+import Classes.Kleidung as Kleidung
+import Classes.Waffe as  Waffe
 from typing import Final
 
 class Player:

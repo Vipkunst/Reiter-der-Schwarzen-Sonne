@@ -724,7 +724,14 @@ zweiter_prototyp_pfad = {
         }
     },
     "absK8": {
-        "content": absK8
+        "content": absK8,
+        "options": {
+            "1": "absK8",
+            "2": "end"
+        },
+        "text_options": {
+            "1": "würfeln"
+        }
     }
 }
 
