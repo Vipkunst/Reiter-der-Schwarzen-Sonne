@@ -1,6 +1,5 @@
 class Gegner:
     name = ""
-    HP = 0
     angriff = 0
     verteidigung = 0
     resistenz = 0

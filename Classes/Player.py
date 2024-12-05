@@ -5,12 +5,14 @@ from typing import Final
 class Player:
     schicksalPunkte = [False] * 14
     staerke = 5
-    waffen = [Waffe] * 6
+    waffen = [Waffe.Waffe(0, 0, 0)] * 6
+    waffeEquiped = 0
     verteidigung = 0
     MAX_HP: Final[int] = 6
-    HP = 6
+    HP = 5
     Geschick = 5
     MAX_Geschick: Final[int] = 6
+    angriff = staerke + waffen[waffeEquiped].trefferbonus
     tot = False
 
     utensilien = [""] * 6
@@ -24,9 +26,15 @@ class Player:
             f"slots={self.slots})"
         )
 
-    def upadteHealth(self, damage):
+    def setHP(self, HP):
+        if (HP <= 6 and HP >= 0):
+            self.HP = HP
+            return self.HP
+        raise OverflowError("HP kann nicht höher als 6 oder niedriger als 0 sein")
+
+    def upadteHP(self, damage):
         self.HP += damage
-        if (self.HP <= -3):
+        if (self.HP <= 0):
             self.tot = True
             return self.tot
         return self.HP
